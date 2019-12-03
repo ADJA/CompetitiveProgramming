@@ -1,3 +1,19 @@
+/*
+  Here we cannot change value at fixed point, so let's not move it at all.
+
+  We find how many elements from left and from right we must move, and how many are 
+  equal to fixed point so they are optional to move.
+
+  Based on these, we check if we can move enough elemets, and if not, return impossible.
+
+  Then we move elements we need to move in L and R so that they are around fixed point,
+  and do one mirror swap around fixed point.
+
+  Then we simply sort elements in L and R similar to selection sort.
+
+  Total number of swaps should be ~3/2 n, so ~75 as we need (it should be a bit less).
+*/
+
 #include <iostream>
 #include <fstream>
 #include <cmath>
