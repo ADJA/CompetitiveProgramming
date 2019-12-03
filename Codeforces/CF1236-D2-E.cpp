@@ -76,7 +76,7 @@ int main() {
   long long ans = 0;
 
   for (int i = 0; i < n; i++) {
-    // cerr << l[i] << " " << r[i] << endl;
+    cerr << l[i] << " " << r[i] << endl;
     ans += 1ll * (r[i] - l[i] + 1);
   }
 
